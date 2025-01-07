@@ -61,7 +61,12 @@ This dataset is derived from the MIMIC-IV-ECHO and MIMIC-IV-NOTE datasets. Use o
 ## Citation
 As the associated paper has not yet been accepted, citation details will be added later. For now, please credit the repository as:
 ```
-PLAX EF Labels Dataset, https://github.com/Jerry0408/PLAX_EF_Labels_202501
+@misc{plax_labels_github,
+  author = {Zhiyuan Gao, Dominic Yurk, Yaser S. Abu-Mostafa},
+  title = {PLAX EF Labels Dataset},
+  year = {2025},
+  note = {Available at: https://github.com/Jeffrey4899/PLAX_EF_Labels_202501}
+}
 ```
 
 ## References
