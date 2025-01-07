@@ -37,6 +37,7 @@ p10,p10872900,s96990073,96990073_0057,66.43
 
 Example PLAX Echocardiographic View
 ![Illustrative PLAX View](Examples/PLAX_example.jpg)
+
 *Note: This image is not sourced from the MIMIC dataset. It is an illustrative example obtained from an online source.*
 
 
