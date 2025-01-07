@@ -59,5 +59,6 @@ PLAX EF Labels Dataset, [GitHub Repository Link]
 This dataset is derived from the following publicly available datasets:
 - MIMIC-IV-ECHO: Johnson AEW, Pollard TJ, Shen L, et al. (2020). MIMIC-IV Clinical Database. Version 2.0. Available at: https://physionet.org/content/mimic-iv-echo/
 - MIMIC-IV-NOTE: Johnson AEW, Pollard TJ, Shen L, et al. (2020). MIMIC-IV Clinical Database. Version 2.0. Available at: https://physionet.org/content/mimic-iv/
+
 Access to the original datasets requires completion of the PhysioNet Data Use Agreement.
 
