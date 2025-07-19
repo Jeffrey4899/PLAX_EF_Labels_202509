@@ -69,10 +69,11 @@ This dataset is derived from the MIMIC-IV-ECHO and MIMIC-IV-NOTE datasets. Use o
 ## Citation
 If you use this dataset, please cite the following paper:
 ```
-@inproceedings{gao2025plax,
-title={PLAX-EF: Ejection Fraction Estimation from Parasternal Long Axis Echocardiographic Views},
-author={Gao, Zhiyuan and Yurk, Dominic and Abu-Mostafa, Yaser S.},
-booktitle={Medical Imaging with Deep Learning (MIDL)},
+@inproceedings{
+gao2025machine,
+title={Machine Learning with Scarce Data: Ejection Fraction Prediction Using {PLAX} View},
+author={Zhiyuan Gao and Dominic Yurk and Yaser S. Abu-Mostafa},
+booktitle={Medical Imaging with Deep Learning},
 year={2025},
 url={https://openreview.net/forum?id=JEN5FzeFZj}
 }
