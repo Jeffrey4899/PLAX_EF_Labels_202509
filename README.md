@@ -67,15 +67,14 @@ In the future, this repository will include:
 This dataset is derived from the MIMIC-IV-ECHO and MIMIC-IV-NOTE datasets. Use of this dataset must comply with the MIMIC-IV Data Use Agreement. The labels are shared under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. For full license details, see [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Citation
-As the associated paper has not yet been accepted, citation details will be added later. For now, please credit the repository as:
+If you use this dataset, please cite the following paper:
 ```
-Zhiyuan Gao, Dominic Yurk and Yaser S. Abu-Mostafa. Plax ef labels dataset, 2025. URL https://github.com/Jeffrey4899/PLAX_EF_Labels_202501.
-
-@misc{plax_labels_github,
-  author = {Zhiyuan Gao, Dominic Yurk, Yaser S. Abu-Mostafa},
-  title = {PLAX EF Labels Dataset},
-  year = {2025},
-  note = {Available at: https://github.com/Jeffrey4899/PLAX_EF_Labels_202501}
+@inproceedings{gao2025plax,
+title={PLAX-EF: Ejection Fraction Estimation from Parasternal Long Axis Echocardiographic Views},
+author={Gao, Zhiyuan and Yurk, Dominic and Abu-Mostafa, Yaser S.},
+booktitle={Medical Imaging with Deep Learning (MIDL)},
+year={2025},
+url={https://openreview.net/forum?id=JEN5FzeFZj}
 }
 ```
 
