@@ -2,12 +2,6 @@
 
 This repository contains two datasets of EF (ejection fraction) labels for PLAX (parasternal long-axis) echocardiographic videos, derived from the [MIMIC-IV-ECHO](https://www.physionet.org/content/mimic-iv-echo/0.1/) and [MIMIC-IV-Note](https://physionet.org/content/mimic-iv-note/2.2/) dataset. These labels were generated through two distinct approaches and are intended for research use only. Each dataset includes labels formatted to align with the MIMIC-IV-ECHO dataset's structure, enabling seamless integration with corresponding echocardiographic files for those with appropriate access to MIMIC-IV.
 
-> 📄 **Related publication**:  
-> Our paper is accepted as an oral presentation at [MIDL 2025](https://2025.midl.io/).  
-> 📘 Read it here: [https://openreview.net/forum?id=JEN5FzeFZj](https://openreview.net/forum?id=JEN5FzeFZj)
-
-> 🎥 **Watch the talk** (starts at 5:34:30):  
-> [https://www.youtube.com/watch?v=tUEeZa0O9qs&t=20070](https://www.youtube.com/watch?v=tUEeZa0O9qs&t=20070)
 
 
 ## Description of Datasets
@@ -69,14 +63,13 @@ This dataset is derived from the MIMIC-IV-ECHO and MIMIC-IV-NOTE datasets. Use o
 ## Citation
 If you use this dataset, please cite the following paper:
 ```
-@inproceedings{
-gao2025machine,
-title={Machine Learning with Scarce Data: Ejection Fraction Prediction Using {PLAX} View},
-author={Zhiyuan Gao and Dominic Yurk and Yaser S. Abu-Mostafa},
-booktitle={Medical Imaging with Deep Learning},
-year={2025},
-url={https://openreview.net/forum?id=JEN5FzeFZj}
-}
+Zhiyuan Gao, Dominic Yurk and Yaser S. Abu-Mostafa. Plax ef labels dataset, 2025. URL https://github.com/Jeffrey4899/PLAX_EF_Labels_202501.
+
+@misc{plax_labels_github,
+  author = {Zhiyuan Gao, Dominic Yurk, Yaser S. Abu-Mostafa},
+  title = {PLAX EF Labels Dataset},
+  year = {2025},
+  note = {Available at: https://github.com/Jeffrey4899/PLAX_EF_Labels_202509}
 ```
 
 ## References
