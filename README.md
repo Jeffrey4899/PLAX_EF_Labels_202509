@@ -30,7 +30,7 @@ This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE
   - Validated EF values using a trained A4C model (trained using [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.64%.
  
 ### 3. Ground Truth Dataset - A4C videos with EF labels
-This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding PLAX videos. After rigorous filtering and validation:
+This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding A4C videos. After rigorous filtering and validation:
 - **Size**: 1,018 videos across 290 studies.
 - **Methodology**:
   - Correlated echocardiography studies and clinical notes within a 1-day window.
