@@ -81,12 +81,7 @@ This dataset is derived from the MIMIC-IV-ECHO and MIMIC-IV-NOTE datasets. Use o
 ## Citation
 If you use this dataset, please credit the repository as:
 ```
-@misc{plax_labels_github,
-  author = {Zhiyuan Gao, Dominic Yurk, Yaser S. Abu-Mostafa},
-  title = {PLAX EF Labels Dataset},
-  year = {2025},
-  note = {Available at: https://github.com/Jeffrey4899/PLAX_EF_Labels_202509}
-}
+Gao et al., *Learning from Scarce Labels: Multi-View Echocardiography for Ejection Fraction Prediction*. **IEEE Transactions on Medical Imaging**, under review
 ```
 
 ## References
