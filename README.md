@@ -10,33 +10,39 @@ This repository contains two datasets of EF (ejection fraction) labels for PLAX 
 - **[Google Colab Notebook](https://colab.research.google.com/drive/1E2IWrfpBIKI4cBoBTCn3OLwEK9o3GTMM)** – Explore and run the inference code directly in Colab.  
 
 ---
-
 ## 📂 Description of Datasets
 
-### 1. Generated Dataset - PLAX videos with EF labels
-This dataset contains EF labels generated through the following pipeline:
-- **View Classification**: Applied a fine-tuned video view classifier to identify PLAX and A4C views in MIMIC-IV-ECHO.
-- **EF Value Generation**:
-  - Used a pre-trained A4C model to predict EF values for A4C videos.
-  - Averaged EF predictions across A4C videos in each study to assign EF labels to corresponding PLAX videos.
-- **Size**: 25,532 videos across 4,822 studies.
+### 1. Generated Dataset – PLAX videos with EF labels  
+**File**: `PLAX_with_EF_labels_proxy_dataset.csv`  
+This dataset contains EF labels generated through the following pipeline:  
+- **View Classification**: Applied a fine-tuned video view classifier to identify PLAX and A4C views in MIMIC-IV-ECHO.  
+- **EF Value Generation**:  
+  - Used a pre-trained A4C model to predict EF values for A4C videos.  
+  - Averaged EF predictions across A4C videos in each study to assign EF labels to corresponding PLAX videos.  
+- **Size**: 25,532 videos across 4,822 studies.  
 
-### 2. Ground Truth Dataset - PLAX videos with EF labels
-This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding PLAX videos. After rigorous filtering and validation:
-- **Size**: 1,708 videos across 295 studies.
-- **Methodology**:
-  - Correlated echocardiography studies and clinical notes within a 1-day window.
-  - Extracted EF values from free-text notes using GPT-4.
-  - Validated EF values using a trained A4C model (trained using [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.64%.
- 
-### 3. Ground Truth Dataset - A4C videos with EF labels
-This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding A4C videos. After rigorous filtering and validation:
-- **Size**: 1,018 videos across 290 studies.
-- **Methodology**:
-  - Correlated echocardiography studies and clinical notes within a 1-day window.
-  - Extracted EF values from free-text notes using GPT-4.
-  - Validated EF values using a trained A4C model (trained using [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.95%.
-    
+---
+
+### 2. Ground Truth Dataset – PLAX videos with EF labels  
+**File**: `PLAX_with_EF_labels_ground_truth_dataset.csv`  
+This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding PLAX videos. After rigorous filtering and validation:  
+- **Size**: 1,708 videos across 295 studies.  
+- **Methodology**:  
+  - Correlated echocardiography studies and clinical notes within a 1-day window.  
+  - Extracted EF values from free-text notes using GPT-4.  
+  - Validated EF values using a trained A4C model (trained using [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.64%.  
+
+---
+
+### 3. Ground Truth Dataset – A4C videos with EF labels  
+**File**: `A4C_with_EF_labels_ground_truth_dataset.csv`  
+This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding A4C videos. After rigorous filtering and validation:  
+- **Size**: 1,018 videos across 290 studies.  
+- **Methodology**:  
+  - Correlated echocardiography studies and clinical notes within a 1-day window.  
+  - Extracted EF values from free-text notes using GPT-4.  
+  - Validated EF values using a trained A4C model (trained using [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.95%.  
+
 ---
 
 ## 📑 File Format
