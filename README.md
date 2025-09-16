@@ -20,7 +20,6 @@ This dataset contains EF labels generated through the following pipeline:
   - Used a pre-trained A4C model to predict EF values for A4C videos.
   - Averaged EF predictions across A4C videos in each study to assign EF labels to corresponding PLAX videos.
 - **Size**: 25,532 videos across 4,822 studies.
-- **Purpose**: Enables training of machine learning models for PLAX EF prediction.
 
 ### 2. Ground Truth Dataset
 This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding PLAX videos. After rigorous filtering and validation:
@@ -29,7 +28,6 @@ This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE
   - Correlated echocardiography studies and clinical notes within a 1-day window.
   - Extracted EF values from free-text notes using GPT-4.
   - Validated EF values using a trained A4C model, achieving a mean absolute error (MAE) of 6.64%.
-- **Purpose**: Serves as an independent test set for evaluating PLAX EF prediction models.
 ---
 
 ## 📑 File Format
