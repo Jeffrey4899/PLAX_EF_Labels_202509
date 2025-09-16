@@ -79,9 +79,10 @@ model_path = hf_hub_download(repo_id="your-hf-repo", filename="model.pt")
 This dataset is derived from the MIMIC-IV-ECHO and MIMIC-IV-NOTE datasets. Use of this dataset must comply with the MIMIC-IV Data Use Agreement. The labels are shared under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. For full license details, see [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Citation
-If you use this dataset, please credit the repository as:
+If you use this dataset, please cite:
 ```
-Gao et al., *Learning from Scarce Labels: Multi-View Echocardiography for Ejection Fraction Prediction*. **IEEE Transactions on Medical Imaging**, under review
+Gao et al., Learning from Scarce Labels: Multi-View Echocardiography for Ejection Fraction Prediction.
+IEEE Transactions on Medical Imaging, under review
 ```
 
 ## References
