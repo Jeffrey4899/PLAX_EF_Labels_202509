@@ -6,8 +6,8 @@ This repository contains two datasets of EF (ejection fraction) labels for PLAX 
 
 ## 🚀 Live Demos
 
-- **[Hugging Face Demo](https://huggingface.co/spaces/...)** – Try EF estimation from PLAX and A4C clips.  
-- **[Google Colab Notebook](https://colab.research.google.com/...)** – Run inference on your own videos step by step.  
+- **[Hugging Face Demo](https://huggingface.co/spaces/Jeff4899/202509_PLAX_EF_Demo)** – Try EF estimation from PLAX and A4C clips.  
+- **[Google Colab Notebook](https://colab.research.google.com/drive/1E2IWrfpBIKI4cBoBTCn3OLwEK9o3GTMM)** – Run inference on your own videos step by step.  
 
 ⚠️ **Note**: For simplicity, the demo and Colab use **one PLAX model** and **one A4C model**. In our research setting, EF prediction was aggregated from **four PLAX models + one A4C model**.
 
@@ -66,8 +66,8 @@ To use these labels:
 ---
 
 ## 📦 Models and Code
-- Example inference code is provided in the [Colab notebook](https://colab.research.google.com/...).  
-- Pretrained models are available on [Hugging Face Hub](https://huggingface.co/...).  
+- Example inference code is provided in the [Colab notebook](https://colab.research.google.com/drive/1E2IWrfpBIKI4cBoBTCn3OLwEK9o3GTMM).  
+- Pretrained models are available on Hugging Face, [PLAX Models](https://huggingface.co/Jeff4899/202509_PLAX_EF); [A4C Model](https://huggingface.co/Jeff4899/202509_A4C_EF).  
 - If you want to replicate the full aggregation setup (4×PLAX + 1×A4C), we recommend downloading all model checkpoints from Hugging Face.  
 
 We do **not** host large model files directly in this repository.  
