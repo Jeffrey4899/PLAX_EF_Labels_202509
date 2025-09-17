@@ -2,7 +2,8 @@
 
 This repository contains two datasets of EF (ejection fraction) labels for PLAX (parasternal long-axis) echocardiographic videos, derived from the [MIMIC-IV-ECHO](https://www.physionet.org/content/mimic-iv-echo/0.1/) and [MIMIC-IV-Note](https://physionet.org/content/mimic-iv-note/2.2/) dataset. These labels were generated through two distinct approaches and are intended for research use only. Each dataset includes labels formatted to align with the MIMIC-IV-ECHO dataset's structure, enabling seamless integration with corresponding echocardiographic files for those with appropriate access to MIMIC-IV.
 
----
+This repository contains three datasets of EF (ejection fraction) labels for PLAX (parasternal long-axis) and A4C (Apical-4-chamber) echocardiographic videos, derived from the [MIMIC-IV-ECHO](https://www.physionet.org/content/mimic-iv-echo/0.1/) and [MIMIC-IV-Note](https://physionet.org/content/mimic-iv-note/2.2/) datasets. These labels were generated through two distinct approaches and are intended for research use only. Each dataset includes labels formatted to align with the MIMIC-IV-ECHO dataset's structure, enabling seamless integration with corresponding echocardiographic files for those with appropriate access to MIMIC-IV.
+
 
 ## 🚀 Live Demos
 
@@ -14,34 +15,34 @@ This repository contains two datasets of EF (ejection fraction) labels for PLAX 
 
 ### 1. Generated Dataset – PLAX videos with EF labels  
 **File**: `PLAX_with_EF_labels_proxy_dataset.csv`  
-This dataset contains EF labels generated through the following pipeline:  
-- **View Classification**: Applied a fine-tuned video view classifier to identify PLAX and A4C views in MIMIC-IV-ECHO.  
-- **EF Value Generation**:  
-  - Used a pre-trained A4C model to predict EF values for A4C videos.  
-  - Averaged EF predictions across A4C videos in each study to assign EF labels to corresponding PLAX videos.  
-- **Size**: 25,532 videos across 4,822 studies.  
+This dataset provides EF labels generated using proxy labels and paired with PLAX echocardiographic videos.  
+- **Content**: 25,532 PLAX videos across 4,822 studies.  
+- **Purpose**: Enables large-scale training of machine learning models for EF prediction.  
+- **Note**: See our paper for the generation pipeline.  
 
 ---
-
 ### 2. Ground Truth Dataset – PLAX videos with EF labels  
 **File**: `PLAX_with_EF_labels_ground_truth_dataset.csv`  
-This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding PLAX videos. After rigorous filtering and validation:  
-- **Size**: 1,708 videos across 295 studies.  
-- **Methodology**:  
-  - Correlated echocardiography studies and clinical notes within a 1-day window.  
-  - Extracted EF values from free-text notes using GPT-4.  
-  - Validated EF values using a trained A4C model (trained using [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.64%.  
+This dataset provides EF labels derived directly from clinical notes and paired with PLAX echocardiographic videos.  
+- **Content**: 1,708 PLAX videos across 295 studies.
+- **Purpose**: Serves as a high-quality dataset for evaluating PLAX EF prediction models.  
+- **Generation Process**:  
+  - Matched echocardiography studies with discharge summaries within a 1-day window to maximize temporal accuracy.  
+  - Used GPT-4 NLP to extract EF values from free-text notes. The extraction prompts used are provided in [`GPT4_NLP_EF_Extraction_Prompts.ipynb`](GPT4_NLP_EF_Extraction_Prompts.ipynb).  
+  - Cross-validated extracted EF values with predictions from a trained A4C model (based on [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.64%.  
+
 
 ---
 
 ### 3. Ground Truth Dataset – A4C videos with EF labels  
 **File**: `A4C_with_EF_labels_ground_truth_dataset.csv`  
-This dataset contains EF labels derived from clinical notes in the MIMIC-IV-NOTE dataset. Using time-based correlation and GPT-4 NLP, EF values were extracted from discharge summaries and paired with corresponding A4C videos. After rigorous filtering and validation:  
-- **Size**: 1,018 videos across 290 studies.  
-- **Methodology**:  
-  - Correlated echocardiography studies and clinical notes within a 1-day window.  
-  - Extracted EF values from free-text notes using GPT-4.  
-  - Validated EF values using a trained A4C model (trained using [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.95%.  
+This dataset provides EF labels derived directly from clinical notes and paired with A4C echocardiographic videos.  
+- **Content**: 1,018 A4C videos across 290 studies.
+- **Purpose**: Serves as a high-quality dataset for evaluating A4C EF prediction models.  , supporting multi-view training and evaluation.  
+- **Generation Process**:  
+  - Matched echocardiography studies with discharge summaries within a 1-day window to maximize temporal accuracy.  
+  - Used GPT-4 NLP to extract EF values from free-text notes. The extraction prompts used are provided in [`GPT4_NLP_EF_Extraction_Prompts.ipynb`](GPT4_NLP_EF_Extraction_Prompts.ipynb).  
+  - Cross-validated extracted EF values with predictions from a trained A4C model (based on [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.95%.  
 
 ---
 
