@@ -14,7 +14,7 @@ This repository contains three datasets of EF (ejection fraction) labels for PLA
 ## 📂 Description of Datasets
 
 ### 1. Generated Dataset – PLAX videos with EF labels  
-**File**: `PLAX_with_EF_labels_proxy_dataset.csv`  
+**File**: [`PLAX_with_EF_labels_proxy_dataset.csv`](PLAX_with_EF_labels_proxy_dataset.csv)  
 This dataset provides EF labels generated using proxy labels and paired with PLAX echocardiographic videos.  
 - **Content**: 25,532 PLAX videos across 4,822 studies.  
 - **Purpose**: Enables large-scale training of machine learning models for EF prediction.  
@@ -22,7 +22,7 @@ This dataset provides EF labels generated using proxy labels and paired with PLA
 
 ---
 ### 2. Ground Truth Dataset – PLAX videos with EF labels  
-**File**: `PLAX_with_EF_labels_ground_truth_dataset.csv`  
+**File**: [`PLAX_with_EF_labels_ground_truth_dataset.csv`](PLAX_with_EF_labels_ground_truth_dataset.csv)
 This dataset provides EF labels derived directly from clinical notes and paired with PLAX echocardiographic videos.  
 - **Content**: 1,708 PLAX videos across 295 studies.
 - **Purpose**: Serves as a high-quality dataset for evaluating PLAX EF prediction models.  
@@ -35,7 +35,7 @@ This dataset provides EF labels derived directly from clinical notes and paired 
 ---
 
 ### 3. Ground Truth Dataset – A4C videos with EF labels  
-**File**: `A4C_with_EF_labels_ground_truth_dataset.csv`  
+**File**: [`A4C_with_EF_labels_ground_truth_dataset.csv`](A4C_with_EF_labels_ground_truth_dataset.csv)
 This dataset provides EF labels derived directly from clinical notes and paired with A4C echocardiographic videos.  
 - **Content**: 1,018 A4C videos across 290 studies.
 - **Purpose**: Serves as a high-quality dataset for evaluating A4C EF prediction models.  , supporting multi-view training and evaluation.  
