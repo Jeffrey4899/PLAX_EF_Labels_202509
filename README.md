@@ -13,6 +13,7 @@ This repository contains three datasets of EF (ejection fraction) labels for PLA
 
 ### 1. Generated Dataset – PLAX videos with EF labels  
 **File**: [`PLAX_with_EF_labels_proxy_dataset.csv`](PLAX_with_EF_labels_proxy_dataset.csv)  
+
 This dataset provides EF labels generated using proxy labels and paired with PLAX echocardiographic videos.  
 - **Content**: 25,532 PLAX videos across 4,822 studies.  
 - **Purpose**: Enables large-scale training of machine learning models for EF prediction.  
