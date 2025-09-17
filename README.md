@@ -102,6 +102,7 @@ IEEE Transactions on Medical Imaging, under review
 This dataset is derived from the following publicly available datasets:
 - MIMIC-IV-ECHO: Johnson AEW, Pollard TJ, Shen L, et al. (2020). MIMIC-IV Clinical Database. Version 2.0. Available at: https://www.physionet.org/content/mimic-iv-echo/0.1/
 - MIMIC-IV-NOTE: Johnson AEW, Pollard TJ, Shen L, et al. (2020). MIMIC-IV Clinical Database. Version 2.0. Available at: https://physionet.org/content/mimic-iv-note/2.2/
+- Ouyang, D., He, B., Ghorbani, A. et al. Video-based AI for beat-to-beat assessment of cardiac function. Nature 580, 252–256 (2020). https://doi.org/10.1038/s41586-020-2145-8
 
 Access to the original datasets requires completion of the PhysioNet Data Use Agreement.
 
