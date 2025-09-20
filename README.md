@@ -49,8 +49,8 @@ This dataset provides EF labels derived directly from clinical notes and paired 
 ---
 ### 4. Ground Truth **Multi-View** Subset — paired A4C + PLAX per study
 **Files**:  
-- `A4C_with_EF_labels_ground_truth_dataset_multiview.csv`  
-- `PLAX_with_EF_labels_ground_truth_dataset_multiview.csv`
+- [`A4C_with_EF_labels_ground_truth_dataset_multiview.csv`](A4C_with_EF_labels_ground_truth_dataset_multiview.csv)
+- [`PLAX_with_EF_labels_ground_truth_dataset_multiview.csv`](PLAX_with_EF_labels_ground_truth_dataset_multiview.csv)
 
 **Source**: Derived from Dataset 2 (**PLAX_with_EF_labels_ground_truth_dataset.csv**) and Dataset 3 (**A4C_with_EF_labels_ground_truth_dataset.csv**).  
 We intersect studies across the two datasets and retain only those with **≥1 A4C video** *and* **≥1 PLAX video** for the same study.
