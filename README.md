@@ -29,7 +29,7 @@ This dataset provides EF labels derived directly from clinical notes and paired 
 - **Generation Process**:  
   - Matched echocardiography studies with discharge summaries within a 1-day window to maximize temporal accuracy.  
   - Used GPT-4 NLP to extract EF values from free-text notes. The extraction prompts used are provided in [`GPT4_NLP_EF_Extraction_Prompts.ipynb`](GPT4_NLP_EF_Extraction_Prompts.ipynb).  
-  - Cross-validated extracted EF values with predictions from a trained A4C model (based on [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.64%.  
+  - Cross-validated extracted EF values with predictions from a trained A4C model (based on [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.95%.  
 
 
 ---
