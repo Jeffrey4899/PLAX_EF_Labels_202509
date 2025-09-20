@@ -45,6 +45,23 @@ This dataset provides EF labels derived directly from clinical notes and paired 
   - Used GPT-4 NLP to extract EF values from free-text notes. The extraction prompts used are provided in [`GPT4_NLP_EF_Extraction_Prompts.ipynb`](GPT4_NLP_EF_Extraction_Prompts.ipynb).  
   - Cross-validated extracted EF values with predictions from a trained A4C model (based on [EchoNet-Dynamic](https://echonet.github.io/dynamic/)), achieving a mean absolute error (MAE) of 6.95%.  
 
+
+---
+### 4. Ground Truth **Multi-View** Subset — paired A4C + PLAX per study
+**Files**:  
+- `A4C_with_EF_labels_ground_truth_dataset_multiview.csv`  
+- `PLAX_with_EF_labels_ground_truth_dataset_multiview.csv`
+
+**Source**: Derived from Dataset 2 (**PLAX_with_EF_labels_ground_truth_dataset.csv**) and Dataset 3 (**A4C_with_EF_labels_ground_truth_dataset.csv**).  
+We intersect studies across the two datasets and retain only those with **≥1 A4C video** *and* **≥1 PLAX video** for the same study.
+
+**Content**:  
+- **Studies**: 284 overlapping studies  
+- **Videos**: 1,000 A4C videos and 1,275 PLAX videos  
+- **Labels**: EF values are exactly the same as in Datasets 2 & 3 (note-extracted), no relabeling performed.
+
+**Purpose**: Provides a matched, study-level cohort for **multi-view evaluation** (and future multi-view training), ensuring both views are available per study.
+
 ---
 
 ## 📑 File Format
