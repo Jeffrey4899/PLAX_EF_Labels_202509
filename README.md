@@ -24,7 +24,7 @@ This dataset provides EF labels generated using proxy labels and paired with PLA
 **File**: [`PLAX_with_EF_labels_ground_truth_dataset.csv`](PLAX_with_EF_labels_ground_truth_dataset.csv)
 
 This dataset provides EF labels derived directly from clinical notes and paired with PLAX echocardiographic videos.  
-- **Content**: 1,708 PLAX videos across 295 studies.
+- **Content**: 1,320 PLAX videos across 295 studies.
 - **Purpose**: Serves as a high-quality dataset for evaluating PLAX EF prediction models.  
 - **Generation Process**:  
   - Matched echocardiography studies with discharge summaries within a 1-day window to maximize temporal accuracy.  
@@ -38,7 +38,7 @@ This dataset provides EF labels derived directly from clinical notes and paired 
 **File**: [`A4C_with_EF_labels_ground_truth_dataset.csv`](A4C_with_EF_labels_ground_truth_dataset.csv)
 
 This dataset provides EF labels derived directly from clinical notes and paired with A4C echocardiographic videos.  
-- **Content**: 1,018 A4C videos across 290 studies.
+- **Content**: 1,017 A4C videos across 290 studies.
 - **Purpose**: Serves as a high-quality dataset for evaluating A4C EF prediction models.  , supporting multi-view training and evaluation.  
 - **Generation Process**:  
   - Matched echocardiography studies with discharge summaries within a 1-day window to maximize temporal accuracy.  
