@@ -113,14 +113,18 @@ This dataset is derived from the MIMIC-IV-ECHO and MIMIC-IV-NOTE datasets. Use o
 ## Citation
 If you use this dataset, please cite the following papers:
 ```
-Gao et al., Learning from Scarce Labels: Multi-View Echocardiography for Ejection Fraction Prediction.
-Machine Learning for Biomedical Imaging, under review
-```
-```
-## Reference  
 Gao et al., *Learning from Scarce Labels: Multi-View Echocardiography for Ejection Fraction Prediction*.  
 Manuscript in preparation / Preprint, 2025.
-
+```
+```
+@inproceedings{
+  gao2025machine,
+  title={Machine Learning with Scarce Data: Ejection Fraction Prediction Using PLAX View},
+  author={Zhiyuan Gao and Dominic Yurk and Yaser S. Abu-Mostafa},
+  booktitle={Medical Imaging with Deep Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=JEN5FzeFZj}
+}
 ```
 ## References
 This dataset is derived from the following publicly available datasets:
