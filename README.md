@@ -117,14 +117,10 @@ Gao et al., Learning from Scarce Labels: Multi-View Echocardiography for Ejectio
 Machine Learning for Biomedical Imaging, under review
 ```
 ```
-@inproceedings{
-gao2025machine,
-title={Machine Learning with Scarce Data: Ejection Fraction Prediction Using {PLAX} View},
-author={Zhiyuan Gao and Dominic Yurk and Yaser S. Abu-Mostafa},
-booktitle={Medical Imaging with Deep Learning},
-year={2025},
-url={https://openreview.net/forum?id=JEN5FzeFZj}
-}
+## Reference  
+Gao et al., *Learning from Scarce Labels: Multi-View Echocardiography for Ejection Fraction Prediction*.  
+Manuscript in preparation / Preprint, 2025.
+
 ```
 ## References
 This dataset is derived from the following publicly available datasets:
