@@ -114,7 +114,7 @@ This dataset is derived from the MIMIC-IV-ECHO and MIMIC-IV-NOTE datasets. Use o
 If you use this dataset, please cite:
 ```
 Gao et al., Learning from Scarce Labels: Multi-View Echocardiography for Ejection Fraction Prediction.
-IEEE Transactions on Medical Imaging, under review
+Machine Learning for Biomedical Imaging, under review
 ```
 
 ## References
