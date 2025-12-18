@@ -125,7 +125,7 @@ booktitle={Medical Imaging with Deep Learning},
 year={2025},
 url={https://openreview.net/forum?id=JEN5FzeFZj}
 }
-
+```
 ## References
 This dataset is derived from the following publicly available datasets:
 - MIMIC-IV-ECHO: Johnson AEW, Pollard TJ, Shen L, et al. (2020). MIMIC-IV Clinical Database. Version 2.0. Available at: https://www.physionet.org/content/mimic-iv-echo/0.1/
